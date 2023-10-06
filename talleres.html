@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CESCAEN - Talleres</title>
+    <link rel="icon" href="logo.jpg">
+
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #E5E5F7;
+            color: #000;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+/* Barra de navegación */
+.navbar {
+  background-color: #060a49;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  border: 10px solid #444CF7;
+  padding: 15px;
+}
+
+.logo img {
+  max-width: 140px;
+  border-radius: 50px;
+}
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin-right: 20px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Contenido de la página Talleres */
+        .talleres {
+            text-align: center;
+        }
+
+        .talleres h1 {
+            font-size: 2.5rem;
+            margin-top: 40px;
+            color: #000;
+        }
+
+        .talleres p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            margin: 20px 0;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 160px 0 50px;
+            position: relative;
+        }
+
+        .footer-social {
+            text-align: center;
+        }
+
+        .footer-social a {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .footer-social img {
+            width: 60px;
+            height: 60px;
+            border: 1px solid #000;
+            border-radius: 50%;
+        }
+
+        .footer-copyright {
+            padding-top: 30px;
+            border-top: 2px solid #918484;
+            text-align: center;
+        }
+
+        .footer-copyright::after {
+            content: "Centro Estratégico de Capacitación y Asesoría Empresarial de Nicaragua";
+        }
+
+        /* Estilos Responsivos */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 60px 0;
+            }
+
+            .navbar {
+                padding: 20px 0;
+            }
+
+            .logo {
+                border-width: 10px;
+                padding: 5px;
+            }
+
+            .logo img {
+                max-width: 80px;
+            }
+
+            .talleres h1 {
+                font-size: 2.2rem;
+            }
+
+            .footer {
+                padding: 80px 0 30px;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .talleres h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Estilos para los seminarios */
+        .seminario {
+            border: 8px solid #444CF7;
+            padding: 20px;
+            margin: 20px;
+            display: inline-block;
+            position: relative;
+        }
+
+        .seminario img {
+            max-width: 460px;
+            height: auto;
+        }
+
+        .ver-detalles {
+            display: block;
+            background-color: #060a49;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .ver-detalles:hover {
+            background-color: #333;
+        }
+
+        .seminario__descripcion {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            box-sizing: border-box;
+            overflow: auto;
+        }
+
+        .seminario__descripcion p {
+            font-size: 1rem;
+        }
+
+        .cerrar {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Logo CESCAEN">
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="talleres.html">Talleres</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido de la página Talleres -->
+    <section class="talleres">
+        <div class="container">
+            <h1>Talleres de CESCAEN</h1>
+            <p>Descubre nuestros talleres y seminarios diseñados para impulsar tu negocio.</p>
+
+            <!-- Seminario 1 -->
+            <div class="seminario">
+                <img src="seminario1.jpg" alt="Seminario 1">
+                <a href="#" class="ver-detalles">Ver Detalles</a>
+                <div class="seminario__descripcion">
+                    <span class="cerrar">X</span>
+                    <h2>MEDIDAS CAUTELARES EN EL PROCESO CIVIL NICARAGÜENSE</h2>
+                    <p>Un enfoque exhaustivo en las medidas cautelares dentro del proceso civil nicaragüense. Este curso
+                        será impartido por la renombrada Doctora Yamileth de los Angeles Garcia Lopez.
+
+                        <p>Detalles del Curso:</p>
+                        <p>¡Cupo Limitado!</p>
+                        <p>Fecha: 14 y 28 de Octubre, 2023.</p>
+                        <p>Lugar: Centro de Convenciones Olof Palme, Managua, Nicaragua.</p>
+                        <p>Modalidad: Virtual y Presencial.</p>    
+                        <p>Contáctanos a través de WhatsApp: 8140 1579.</p>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Seminario 2 -->
+            <div class="seminario">
+                <img src="seminario2.jpg" alt="Seminario 2">
+                <a href="#" class="ver-detalles">Ver Detalles</a>
+                <div class="seminario__descripcion">
+                    <span class="cerrar">X</span>
+                    <h2>Seminario en Administración de Contratos de Trabajo, Salarios y Prestaciones Laborales</h2>
+                    <p>Este seminario proporciona una visión integral de la administración de contratos de trabajo,
+                        salarios y prestaciones laborales en Nicaragua.</p>
+
+                        <p>Detalles del Seminario:</p>
+                        <p>Modalidad Presencial en Managua, Nicaragua.</p>
+                        <p>¡Cupo Limitado!</p>
+                        <p>Contáctanos a través de WhatsApp: 8140 1579.</p>
+                </div>
+            </div>
+
+            <!-- Seminario 3 -->
+            <div class="seminario">
+                <img src="seminario3.jpg" alt="Seminario 3">
+                <a href="#" class="ver-detalles">Ver Detalles</a>
+                <div class="seminario__descripcion">
+                    <span class="cerrar">X</span>
+                    <h2>Seminario Taller - Actualización de Criterios Jurisprudenciales y Técnicas de Litigación en los
+                        Medios de Impugnación Penal de Nicaragua</h2>
+                    <p>Este seminario taller tiene como objetivo profundizar en los procedimientos para la formulación de escritos en los medios de impugnación. Además, valorarás la importancia de las técnicas de litigación en este contexto y aprenderás a hacer un uso efectivo de la jurisprudencia en la formulación de escritos.
+                    </p>
+                        <p>Detalles del Seminario Taller:</p>
+                        
+                        <p>Modalidad Presencial.</p>
+                        <p>Fechas: Sábado, 26 de agosto y 02, 09 de septiembre del 2023.</p>
+                        <p>Lugar: Matagalpa, Nicaragua.</p>
+                        <p>Contáctanos a través de WhatsApp: 8140 1579.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-social">
+                <a href="https://www.facebook.com/cescaen" target="_blank"><img src="bxl-facebook.svg"
+                        alt="Facebook"></a>
+            </div>
+            <p class="footer-copyright">© 2023 CESCAEN. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript para mostrar/ocultar descripciones de seminarios -->
+    <script>
+        const botonesVerDetalles = document.querySelectorAll('.ver-detalles');
+        const descripcionesSeminarios = document.querySelectorAll('.seminario__descripcion');
+        const botonesCerrar = document.querySelectorAll('.cerrar');
+
+        botonesVerDetalles.forEach((boton, index) => {
+            boton.addEventListener('click', (e) => {
+                e.preventDefault();
+                descripcionesSeminarios[index].style.display = 'block';
+            });
+        });
+
+        botonesCerrar.forEach((boton, index) => {
+            boton.addEventListener('click', () => {
+                descripcionesSeminarios[index].style.display = 'none';
+            });
+        });
+    </script>
+</body>
+
+</html>

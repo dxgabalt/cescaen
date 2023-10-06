@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CESCAEN - Contacto</title>
+    <link rel="icon" href="logo.jpg">
+
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #E5E5F7;
+            color: #000;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+/* Barra de navegación */
+.navbar {
+  background-color: #060a49;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  border: 10px solid #444CF7;
+  padding: 15px;
+}
+
+.logo img {
+  max-width: 140px;
+  border-radius: 50px;
+}
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin-right: 20px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Contenido de la página Contacto */
+        .contact {
+            text-align: center;
+        }
+
+        .contact h1 {
+            font-size: 2.5rem;
+            margin-top: 40px;
+            color: #000;
+        }
+
+        .contact p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            margin: 20px 0;
+        }
+
+        .contact form {
+            text-align: left;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .contact form label {
+            display: block;
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+
+        .contact form input[type="text"],
+        .contact form input[type="email"],
+        .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact form button {
+            display: inline-block;
+            background: #444CF7;
+            color: #fff;
+            padding: 20px 35px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact form button:hover {
+            background-color: #333bbf;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 160px 0 50px;
+            position: relative;
+        }
+
+        .footer-social {
+            text-align: center;
+        }
+
+        .footer-social a {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .footer-social img {
+            width: 60px;
+            height: 60px;
+            border: 1px solid #000;
+            border-radius: 50%;
+        }
+
+        .footer-copyright {
+            padding-top: 30px;
+            border-top: 2px solid #918484;
+            text-align: center;
+        }
+
+        .footer-copyright::after {
+            content: "Centro Estratégico de Capacitación y Asesoría Empresarial de Nicaragua";
+        }
+
+        /* Estilos Responsivos */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 60px 0;
+            }
+
+            .navbar {
+                padding: 20px 0;
+            }
+
+            .logo {
+                border-width: 10px;
+                padding: 5px;
+            }
+
+            .logo img {
+                max-width: 80px;
+            }
+
+            .contact h1 {
+                font-size: 2.2rem;
+            }
+
+            .footer {
+                padding: 80px 0 30px;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .contact h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Logo CESCAEN">
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="talleres.html">Talleres</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido de la página Contacto -->
+    <section class="contact">
+        <div class="container">
+            <h1>Contacto</h1>
+            <p>¡Contáctanos para más información!</p>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-social">
+                <a href="https://www.facebook.com/cescaen" target="_blank"><img src="bxl-facebook.svg" alt="Facebook"></a>
+            </div>
+            <p class="footer-copyright">© 2023 CESCAEN. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

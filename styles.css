@@ -1,0 +1,229 @@
+/* Estilos generales */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #E5E5F7;
+  color: #000;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+  text-align: center;
+}
+
+/* Barra de navegación */
+.navbar {
+  background-color: #060a49;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  border: 10px solid #444CF7;
+  padding: 15px;
+}
+
+.logo img {
+  max-width: 140px;
+  border-radius: 50px;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-right: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Sección de Bienvenida */
+.welcome h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.welcome p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  padding: 8px;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #444CF7;
+  color: #fff;
+  padding: 20px 35px;
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #333bbf;
+}
+
+/* Contenido Adicional */
+.additional-content h2 {
+  font-size: 2rem;
+  margin-top: 40px;
+  color: #000;
+}
+
+.additional-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+/* Formulario de Contacto */
+.contact h2 {
+  font-size: 2rem;
+  margin-top: 40px;
+  color: #000;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+.contact form {
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact form label {
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact form button {
+  display: inline-block;
+  background: #444CF7;
+  color: #fff;
+  padding: 20px 35px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+  background-color: #333bbf;
+}
+
+/* Footer */
+.footer {
+  padding: 160px 0 50px;
+  position: relative;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-social img {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.footer-copyright {
+  padding-top: 30px;
+  border-top: 2px solid #918484;
+  text-align: center;
+}
+
+.footer-copyright::after {
+  content: "Centro Estratégico de Capacitación y Asesoría Empresarial de Nicaragua";
+}
+
+/* Estilos Responsivos */
+@media screen and (max-width: 768px) {
+  .container {
+      padding: 60px 0;
+  }
+
+  .navbar {
+      padding: 20px 0;
+  }
+
+  .logo {
+      border-width: 6px;
+      padding: 5px;
+  }
+
+  .logo img {
+      max-width: 80px;
+  }
+
+  .welcome h1 {
+      font-size: 3.8rem;
+  }
+
+  .cta-button {
+      width: 90%;
+      margin: 0 auto;
+  }
+
+  .additional-content h2 {
+      font-size: 1.8rem;
+  }
+
+  .contact h2 {
+      font-size: 1.8rem;
+  }
+
+  .footer {
+      padding: 80px 0 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cta-button {
+      width: 90%;
+      margin: 0 auto;
+      padding-top: 10px;
+  }
+}
